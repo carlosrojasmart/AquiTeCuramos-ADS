@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ips.aquitecuramos.Controllers.ListadoController">
+    <children>
+        <TableView fx:id="tabla" layoutX="9.0" layoutY="13.0" prefHeight="380.0" prefWidth="1100.0">
+            <columns>
+                <TableColumn fx:id="codigoEPS" prefWidth="69.7999849319458" text="codigo EPS" />
+                <TableColumn fx:id="Id" prefWidth="112.39999389648438" text="ID" />
+                <TableColumn fx:id="nombre" prefWidth="117.00001525878906" text="Nombre" />
+                <TableColumn fx:id="fechaNacimiento" prefWidth="132.39999389648438" text="Fecha de Nacimiento" />
+                <TableColumn fx:id="sexo" minWidth="0.0" prefWidth="39.79998779296875" text="Sexo" />
+                <TableColumn fx:id="nivelIngreso" minWidth="7.199951171875" prefWidth="104.39996337890625" text="Nivel de Ingreso" />
+                <TableColumn fx:id="citas" prefWidth="347.5999755859375" text="Citas" />
+                <TableColumn fx:id="correo" prefWidth="174.00006103515625" text="Correo" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

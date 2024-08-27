@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ips.aquitecuramos.Controllers.InicialController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="btnCargarArchivo" mnemonicParsing="false" onAction="#cargarArchivo" text="Cargar Archivo" />
+                        <MenuItem fx:id="optSalir" mnemonicParsing="false" onAction="#salir" text="Salir" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Paciente">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#registrarPaciente" text="Registrar" />
+                        <MenuItem mnemonicParsing="false" onAction="#citarPaciente" text="NuevaCita" />
+                        <MenuItem mnemonicParsing="false"  onAction="#modCitaPaciente" text="ModificarCita" />
+                        <MenuItem mnemonicParsing="false" onAction="#listarPaciente" text="Listar" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+   <center>
+      <ImageView fitHeight="233.0" fitWidth="271.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@images/AquiTeCuramos.png" />
+         </image>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></ImageView>
+   </center>
+</BorderPane>

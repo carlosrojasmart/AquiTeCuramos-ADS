@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ips.aquitecuramos.Controllers.CitaContoller">
+   <children>
+      <Label layoutX="74.0" layoutY="67.0" text="Paciente Registrado:" />
+      <TextField fx:id="tPacienteRegistrado" layoutX="228.0" layoutY="63.0" prefWidth="150.0" />
+
+      <Label layoutX="74.0" layoutY="116.0" text="Cita de Eps" />
+      <ChoiceBox fx:id="tCitaEps" layoutX="228.0" layoutY="112.0" prefWidth="150.0"/>
+
+      <Label layoutX="77.0" layoutY="161.0" text="Especialidad" />
+      <ChoiceBox fx:id="tEspecialidadRequerida" layoutX="228.0" layoutY="157.0" prefWidth="150.0"/>
+
+      <Label layoutX="78.0" layoutY="209.0" text="Fechas Disponibles" />
+      <ChoiceBox fx:id="tFechasDisponibles" layoutX="228.0" layoutY="205.0" prefWidth="150.0" />
+
+      <Label layoutX="74.0" layoutY="256.0" text="Autorización EPS" />
+      <ChoiceBox fx:id="tAutorizacionEPS"  layoutX="228.0" layoutY="255.0" prefWidth="150.0" />
+
+      <Button fx:id="bGuardar" layoutX="225.0" layoutY="303.0" mnemonicParsing="false" onAction="#guardar" prefWidth="150.0" text="Guardar" />
+   </children>
+</AnchorPane>
+
